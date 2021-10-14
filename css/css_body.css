@@ -1,0 +1,576 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gilroy";
+}
+.link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  color: black;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.title__general {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title__mini {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 140%;
+  margin-bottom: 15px;
+  padding-top: 100px;
+}
+
+/*HIRO START*/
+
+.hiro {
+  height: 100vh;
+  background: url(../img/fon.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hiro__title {
+  padding-top: 380px;
+  font-family: "Noto Serif", serif;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  margin: 50px 0;
+}
+.button_hiro {
+  margin-bottom: 80px;
+}
+.link_hiro {
+  color: white;
+  border: 1px solid white;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+.link_hiro:hover,
+.link_hiro:active,
+.link_hiro:focus {
+  color: rgb(243, 210, 125);
+}
+.hiro__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+  flex-wrap: wrap;
+}
+.hiro__img {
+  max-height: 50px;
+  padding: 0 15px;
+  margin: 30px 0;
+  border-right: 1px solid white;
+}
+.hiro__img:last-child {
+  border-right: none;
+}
+
+/*Catalog*/
+
+.catalog__menu {
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+.catalog__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.link-catalog {
+  min-width: 165px;
+  height: 55px;
+  border: 1px solid gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.link-catalog::before {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  content: "";
+  z-index: -1;
+}
+.catalog__list-item {
+  padding: 6px;
+}
+
+.link-catalog:active,
+.link-catalog:hover,
+.link-catalog:focus {
+  background: #333;
+  color: white;
+  margin: 0;
+}
+
+.catalog__cards {
+  display: flex;
+  padding: 0 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 80px;
+}
+.card {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.card-desc {
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 3;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.card-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.card:hover .card-img,
+.card:active .card-img,
+.card:focus .card-img {
+  transform: scale(1.05);
+}
+
+/*OUR SALON*/
+
+.our-salon {
+  background: url(../img/our_\ salon.jpg);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_white {
+  color: white;
+  text-align: center;
+}
+.descriprion {
+  max-width: 730px;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  padding: 0 15px;
+}
+
+.link_button {
+  padding: 15px 35px;
+  background-color: white;
+  color: black;
+  transition: 0.4s;
+}
+.link_button:active,
+.link_button:hover {
+  color: rgb(243, 210, 125);
+  background-color: #333;
+}
+
+/*BLOG*/
+
+.blog__cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.card-desc_blog {
+  color: white;
+  bottom: 40px;
+  left: 5px;
+  z-index: 3;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 140%;
+}
+.blog-div {
+  display: flex;
+  justify-content: center;
+}
+.link_white {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #333333;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+.link_white:active,
+.link_white:hover {
+  color: rgb(243, 210, 125);
+  background-color: #333;
+}
+
+/*GALLERY*/
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-cards {
+  display: grid;
+  grid-template-areas:
+    "big_one     big_one   mini_one   mini_two"
+    "mini_three  mini_four big_two    big_two";
+  margin-bottom: 150px;
+}
+.big_one {
+  position: relative;
+  grid-area: big_one;
+}
+.mini_one {
+  grid-area: mini_one;
+}
+.mini_two {
+  grid-area: mini_two;
+}
+.mini_three {
+  grid-area: mini_three;
+}
+.mini_four {
+  grid-area: mini_four;
+}
+.big_two {
+  position: relative;
+  grid-area: big_two;
+}
+.gallery-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery__img {
+  position: relative;
+}
+.gallery-img,
+.gallery-img-mini {
+  width: 100%;
+}
+.gallery__link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.svg {
+  transition: 0.5s;
+}
+.gallery__card:hover .svg,
+.gallery__card:active .svg,
+.gallery__card:focus .svg {
+  transform: scale(1.25);
+}
+
+/*SPAM*/
+.spam {
+  background: url(../img/our_\ salon.jpg);
+}
+.spam__content {
+  display: flex;
+  padding-bottom: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.spam__info {
+  padding-right: 80px;
+}
+.spam__list {
+  min-width: 245px;
+  min-height: 105px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.spam__list-item {
+  color: white;
+  padding-left: 37px;
+  background: transparent url(../img/svg/subscribe__icon.svg) no-repeat;
+}
+.spam__form {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.spam__container {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+.spam__input {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #d6d6d6;
+  color: rgba(214, 214, 214, 1);
+  padding: 14px;
+  margin-right: 15px;
+}
+.spam__input:hover {
+  color: #333333;
+}
+.button_spam {
+  background: #333333;
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 14px;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.button_spam:hover,
+.button_spam:active,
+.button_spam:focus {
+  color: rgb(243, 210, 125);
+}
+
+/*FOOTER*/
+.footer {
+  margin: 80px 0 20px 0;
+  padding: 0 15px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.footer-container__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.footer-container__title::after {
+  content: "";
+  display: block;
+  height: 10px;
+  border-bottom: 1px solid rgba(51, 51, 51, 1);
+}
+.footer-container__logo {
+  display: flex;
+  width: 110px;
+  height: 30px;
+  justify-content: space-between;
+}
+.footer-container__visa {
+  width: 45px;
+  background: url(../img/visa.jpg);
+}
+.footer-container__mastercard {
+  width: 45px;
+  background: url(../img/mastercard.jpg);
+}
+.footer-container__desc {
+  max-width: 255px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 21px;
+}
+.footer-container__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 150%;
+  color: black;
+  transition: 0.5s;
+}
+.footer-container__li {
+  margin-bottom: 15px;
+}
+.footer__bottom {
+  border-top: 1px solid black;
+  height: 61px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-icon {
+  margin-right: 10px;
+}
+.footer-container__link:hover,
+.footer-container__link:active,
+.footer-container__link:focus {
+  color: rgb(190, 147, 38);
+}
+
+/*MEDIA*/
+
+@media all and (max-width: 1120px) {
+  .gallery-cards {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas:
+      "big_one     big_one "
+      "mini_one   mini_two"
+      "mini_three  mini_four"
+      "big_two    big_two";
+  }
+  .nav-link {
+    width: 140px;
+    height: 51px;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+  .nav-link:last-child {
+    margin-right: 0;
+  }
+  .category-ul {
+    justify-content: center;
+  }
+  .footer-container__title {
+    white-space: nowrap;
+  }
+  .hiro__img {
+    margin: 10px 0;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 850px) {
+  .catalog__list-item {
+    margin-right: 20px;
+  }
+  .catalog__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 80px;
+  }
+  .footer__bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
+
+  .footer__bottom .footer-container__link {
+    padding: 0 15px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .spam__container {
+    background-color: transparent;
+  }
+  .spam__form {
+    border: 1px solid transparent;
+  }
+}
+@media all and (max-width: 500px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .spam__info {
+    padding-right: 20px;
+  }
+  .spam__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .spam__input {
+    margin-bottom: 20px;
+  }
+  .card-img {
+    width: 100%;
+  }
+  .card {
+    padding: 10px;
+  }
+}
+@media all and (max-width: 350px) {
+  .hiro__img {
+    display: none;
+  }
+}
